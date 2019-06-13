@@ -1,0 +1,39 @@
+package $packagename.activity;
+
+
+import $packagename.presenter.$namePresenter;
+import $packagename.contract.$nameContract;
+import $packagename.base.BaseActivity;
+import $packagename.R;
+
+/**
+ * @author $author
+ * @Package $packagename
+ * @Description: $description
+ * @date $date
+ */
+public class $nameActivity extends BaseActivity<$namePresenter> implements $nameContract.View{
+
+    @Override
+    protected int setLayout() {
+        return R.layout.$layout;
+    }
+
+    @Override
+    protected $namePresenter createPresenter() {
+        return new $namePresenter();
+    }
+
+    @Override
+    protected void initWidget() {
+
+    }
+
+    @Override
+    protected void initData() {
+
+    }
+
+
+
+}

@@ -1,0 +1,20 @@
+package $packagename.presenter;
+
+import $packagename.activity.$nameActivity;
+import $packagename.model.$nameModel;
+import $packagename.contract.$nameContract;
+import $packagename.base.BasePresenter;
+
+/**
+ * @Package $packagename
+ * @Description: $description
+ * @date $date
+ */
+public class $namePresenter extends BasePresenter<$nameActivity> implements $nameContract.Presenter {
+
+    private $nameModel model;
+
+    public $namePresenter() {
+        model = new $nameModel();
+    }
+}

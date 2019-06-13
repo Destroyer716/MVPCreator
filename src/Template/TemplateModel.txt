@@ -1,0 +1,14 @@
+package $packagename.model;
+
+
+import $packagename.contract.$nameContract;
+
+/**
+ * @Package $packagename
+ * @Description: $description
+ * @date $date
+ */
+public class $nameModel implements $nameContract.Model {
+
+
+}

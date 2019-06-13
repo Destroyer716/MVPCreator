@@ -1,0 +1,94 @@
+package $packagename.fragment;
+
+import android.os.Bundle;
+import android.view.View;
+import butterknife.OnClick;
+
+import $packagename.presenter.$namePresenter;
+import $packagename.contract.$nameContract;
+import $packagename.base.BaseFragment;
+import $packagename.R;
+
+
+
+/**
+ * @author $author
+ * @Package $packagename
+ * @Description: $description
+ * @date $date
+ */
+public class $nameFragment extends BaseFragment<$namePresenter> implements $nameContract.View{
+
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+
+    // TODO: Rename and change types of parameters
+    private String mParam1;
+    private String mParam2;
+
+
+    public $nameFragment() {
+        // Required empty public constructor
+    }
+
+    public static $nameFragment newInstance(String param1, String param2) {
+        $nameFragment fragment = new $nameFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
+    }
+    @Override
+    protected boolean isImmersionBarEnabled() {
+        return false;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
+    }
+
+    @Override
+    protected int setLayout() {
+        return R.layout.$layout;
+    }
+
+    @Override
+    protected $namePresenter createPresenter() {
+        return new $namePresenter();
+    }
+
+    @Override
+    protected void initWidget() {
+
+    }
+
+    @Override
+    protected void initData() {
+
+    }
+
+    @Override
+    protected void lazyInitData() {
+        super.lazyInitData();
+    }
+
+    @Override
+    protected void refreshData() {
+
+    }
+
+    @Override
+    @OnClick({})
+    public void onClick(View v) {
+        super.onClick(v);
+        switch (v.getId()){
+
+        }
+    }
+}

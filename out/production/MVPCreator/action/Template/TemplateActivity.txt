@@ -1,0 +1,23 @@
+package $packagename;
+
+/**
+ * @author $author
+ * @Package $packagename
+ * @Description: $description
+ * @date $date
+ */
+public class $nameActivity{
+
+    private $nameFragment m$nameFragment;
+
+    @Override
+    protected int getActivityLayoutId() {
+        return 0;
+    }
+
+    @Override
+    protected void initPresenterInstance() {
+        new $namePresenter($nameActivity.this, m$nameFragment);
+    }
+
+}

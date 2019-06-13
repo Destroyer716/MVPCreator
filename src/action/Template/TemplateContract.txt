@@ -1,0 +1,23 @@
+package $packagename;
+
+
+
+/**
+ * @Package $packagename
+ * @Description: $description
+ * @date $date
+ */
+public interface $nameContract {
+
+    interface View {
+
+    }
+
+    interface Presenter{
+
+    }
+
+    interface Model{
+
+        }
+}
